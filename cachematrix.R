@@ -7,32 +7,32 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(m = matrix()) {
-i<- NULL # initial val of inverse prop.
+i<- NULL                       ##initial val of inverse prop.
 
-#set method_ matrix
-set <- function(matrix){
+set <- function(matrix){       ##set method_ matrix
   m<<-matrix
   i<<-NULL
 }
-#get method_ matrix
-get <-function(){
-  m # return vals of matrix
+
+get <-function(){              ##get method_ matrix
+  m                            ## return vals of matrix
 }
-#set method_ matrix inverse
-setinverse <- function (inverse){
+
+setinverse <- function (inverse){ ##set method_ matrix inverse
   i<<-inverse
 }
-#get method_ matrix inverse
-getinverse <-function() {
+
+getinverse <-function() {       ##get method_ matrix inverse
   i
 }
-#return output-list of methods
-list(set=set, get=get,
+
+list(set=set, get=get, 
      setinverse = setinverse,
-     getinverse = getinverse)
+     getinverse = getinverse)   ##return output-list of methods
 }
 
 
+## --------.//.------.//.-------
 ## --------.//.------.//.-------
 
 ## Write a short comment describing this function
